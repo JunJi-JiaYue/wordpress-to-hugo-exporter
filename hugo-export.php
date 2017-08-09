@@ -123,7 +123,7 @@ class Hugo_Export
         $output = array(
             'title'  => html_entity_decode(get_the_title($post)),
             'author' => get_userdata($post->post_author)->display_name,
-            'type' => get_post_type($post),
+//          'type' => get_post_type($post),
             'date'   => $this->_getPostDateAsIso($post),
         );
         if (false === empty($post->post_excerpt)) {

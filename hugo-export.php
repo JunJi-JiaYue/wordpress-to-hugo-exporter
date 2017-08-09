@@ -387,7 +387,7 @@ class Hugo_Export
             $wp_filesystem->mkdir(urldecode($this->dir . $post->post_name));
             $filename = urldecode($post->post_name . '/index.md');
         } else {
-            $filename = $this->post_folder . date('Y-m-d', strtotime($post->post_date)) . '-' . urldecode($post->post_name) . '.md';
+            $filename = $this->post_folder . date('Y-m-d', strtotime($post->post_date)) . '-' . $post->ID . '.md';
         }
 
         $wp_filesystem->put_contents($this->dir . $filename, $output);

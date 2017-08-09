@@ -221,7 +221,7 @@ class Hugo_Export
     {
 
         $content   = apply_filters('the_content', $post->post_content);
-        $converter = new Markdownify\ConverterExtra;
+        $converter = new Markdownify\ConverterExtra(2);
         $markdown  = $converter->parseString($content);
 
         if (false !== strpos($markdown, '[]: ')) {

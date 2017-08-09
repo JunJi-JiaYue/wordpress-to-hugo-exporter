@@ -127,7 +127,6 @@ class Hugo_Export
             'date'   => $this->_getPostDateAsIso($post),
             'post_id' => $post->ID,
             'banner' => $banner,
-            'archives' => array(date('Y', $unixTime), date('Y/m', $unixTime), date('Y/m/d', $unixTime)),
         );
         if (false === empty($post->post_excerpt)) {
             $output['excerpt'] = $post->post_excerpt;

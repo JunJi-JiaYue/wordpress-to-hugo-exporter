@@ -50,7 +50,7 @@ class Converter
      *
      * @var bool
      */
-    protected $keepHTML = false;
+    protected $keepHTML = true;
 
     /**
      * wrap output, set to 0 to skip wrapping
